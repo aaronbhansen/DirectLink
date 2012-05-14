@@ -1,0 +1,14 @@
+{
+  "name": "Facebook Direct Link",
+  "version": "1.0",
+  "manifest_version": 1,
+  "description": "Replaces Facebook App Links to best guess links",
+  "content_scripts": [{
+    "matches": ["http://*.facebook.com/*", "https://*.facebook.com/*"],
+    "css": ["plugin.css"],
+    "js": ["jquery.js", "myscript.js"]
+  }],
+  "permissions": [
+    "tabs", "http://*.facebook.com/*", "https://*.facebook.com/*"
+  ]
+}
